@@ -1,0 +1,196 @@
+@import url(//db.onlinewebfonts.com/c/12420e8c141ca7c3dff41de2d59df13e?family=BeaufortforLOL-Bold);
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  color: #fff;
+  font-size: 1.8rem;
+  line-height:1.8;
+  font-family: "BeaufortforLOL-Bold";
+}
+body::before {
+  font-family: "BeaufortforLOL-Bold";
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient(
+        180deg,
+        rgba(41, 35, 32, 0.9),
+        rgba(2, 1, 0, 0.7)
+      ),
+      url(https://lolstatic-a.akamaihd.net/frontpage/apps/prod/artbook/en_US/f31d8b829b603b4b65fdff2475bd0803ced0179d/assets/content/summoners_rift/00_intro/sr_01.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+  p {
+    color: #d5b26e;
+    font-size: 1.7rem;
+  }
+  h1, p {
+      margin-top: 0;
+      margin-bottom: 0.5rem;
+    
+  }
+  label {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input,
+  button,
+  select,
+  textarea {
+      margin: 0;
+      font-family: inherit;
+      font-size: inherit;
+      line-height: inherit;
+  }
+  button {
+    border: none;
+  }
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-riot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .img-riot img {
+    padding: 0;
+    margin: 20px;
+    height: 90px;
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1rem auto 1rem auto;
+  }
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 3.125rem auto;
+}  
+
+@media (min-width:576px){
+  .container {
+    max-width: 540px;
+  }
+
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.5rem;
+ text-align: center;
+}
+.description {
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.167);
+}
+
+/*FORM*/
+form {
+  padding: 2.6rem 0.9rem;
+  border-radius: 0.9rem;
+  background: rgba(0, 0, 0, 0.537);
+
+}
+
+@media (min-width:480px){
+  form {
+    padding: 2.5rem;
+    margin: auto;
+  }
+  
+}
+
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+  font-size: 1.4rem;
+}
+.form-control:hover {
+  border: 2px solid #ffcc80;
+  transition: all 0.3s;
+  color: white;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  height: 4.375rem;
+  padding: 9px 35px 9px 15px;
+  color: #c4b998;
+  background-color: rgb(0, 0, 0);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 2px solid #7e633b;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(145, 145, 145, 0.25);
+}
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: .625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  resize: none;
+}
+
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background: #000000;
+  color: #937341;
+  border: 2px solid #7e633b;
+  cursor: pointer;
+}
+.submit-button:hover {
+  color: #c4b998;
+  transition: all 0.3s;
+}
